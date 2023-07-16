@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Product Sans";
+    src: url(PTSans-Regular.ttf);
+}
+
+body {
+    background-color: #F8FAFB;
+    overflow-x: hidden;
+}
+header {
+    background-color: white;
+    border-bottom: 2px solid #E8E8E8;
+    height: 100px;
+}
+.search {
+    background-color: transparent;
+    border: none;
+}
+.search-span {
+    font-family: 'Product Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A7A7A7;
+    margin-left: 10p;
+}
+
+.notifications {
+    position: relative;
+    border: none;
+    background-color: rgba(235, 235, 235, 0.4);
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 16px !important;
+    }
+    .headbox1 {
+        margin-left: 10px !important;
+    }
+    .navig {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .vertical-menu-dskt {
+        display: none;
+    }
+    .that-one-table-shit {
+        height: auto !important;
+    }
+    .that-one-table-shit2 {
+        height: auto !important;
+    }
+    .headbox15 {
+        display: none !important;
+    }
+}
+
+::placeholder {
+    font-family: 'Product Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A7A7A7;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+    .menu-phone {
+        display: none;
+    }
+    .headbox1 {
+        display: none !important;
+    }
+}
+.headbox15 {
+    margin-left: 100px;
+}
+.headbox2 {
+    margin-left: auto;
+}
+
+
+.vertical-menu-dskt {
+    width: 273px;
+    height: 100%;
+    background-color: white;
+    border-right: 2px solid #E8E8E8;
+    
+}
+
+.user-div {
+    padding-left: 35px;
+    padding-right: 22px;
+    width: 100%;
+    height: calc(52px + 24px + 24px);   
+}
+.text-div {
+    margin-left: 12px;
+    width: 71px;
+}
+.username {
+    font-family: 'Product Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: black;
+}
+.username:hover{
+    text-decoration:underline;
+}
+.job {
+    font-family: 'Product Sans';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: rgba(164, 164, 164, 1);
+}
+.job:hover{
+    text-decoration:underline;
+}
+.settings {
+    border: none;
+    background: transparent;   
+}
+.active {
+    height: 62px;
+    width: 100%;
+    background-color: #F8F8F8;
+    margin-top: 12px;
+    text-decoration: none;
+}
+.purple-div {
+    background-color: rgba(89, 50, 234, 1);
+    width: 6px;
+    height: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;   
+}
+.active-menu-icon {
+    margin-left: 34px;
+}
+.active-menu-span {
+    font-family: 'Product Sans';
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: rgba(89, 50, 234, 1);
+    margin-left: 20px;
+    text-decoration: none !important;
+}
+.enabled {
+    height: 62px;
+    width: 100%;
+    text-decoration: none;
+}
+.menu-icon {
+    margin-left: 39px;
+}
+.menu-span {
+    font-family: 'Product Sans';
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    color: rgba(12, 12, 13, 1);
+    margin-left: 20px;
+}
+.line {
+    border: 1.2px dashed rgba(224, 224, 224, 1);
+}
+
+.dash4-title-span {
+    font-family: 'Product Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.positive {
+    width: 64px;
+    height: 23px;
+    border-radius: 50px;
+    background-color: rgba(35, 193, 10, 0.15);
+    margin-left: 13px;
+}
+.negative {
+    width: 64px;
+    height: 23px;
+    border-radius: 50px;
+    background-color: rgba(193, 10, 10, 0.15);
+    margin-left: 13px;
+}
+
+.negative-percent {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: rgba(193, 10, 10, 1);
+}
+.positive-percent {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: rgba(35, 193, 10, 1);
+}
+
+.number {
+    font-family: 'Product Sans';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: rgba(35, 35, 35, 1);
+    display: inline-block;
+    margin-top: 11px;
+}
+.footer-span {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: rgba(148, 148, 148, 1);
+    display: inline-block;
+    margin-top: 9px;
+}
+
+
+.table-div-title {
+    font-family: 'Product Sans';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+
+}
+
+.filter-button {
+    width: 131px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: rgba(246, 246, 246, 1);
+    font-family: 'Product Sans';
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    color: rgba(26, 43, 136, 1);
+    border: none;
+
+}
+.plus {
+    font-family: 'Product Sans';
+    color: rgb(51, 200, 165);
+}
+.permanent {
+    background-color: rgba(208, 242, 234, 1);
+    border-radius: 6px;
+    padding: 4px;
+    color: rgb(51, 200, 165);
+}
+
+.search-button-modal {
+    border: none;
+    background-color: transparent;
+}
+.that-one-table-shit {
+    padding-top: 27px; padding-left: 27px; padding-right: 29px; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);height: auto; 
+}
+.that-one-table-shit2 {
+    height: auto; 
+}
+
+.job-statistics-title {
+    font-family: 'Product Sans';
+font-size: 22px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0.01em;
+text-align: left;
+
+}
+.job-view-div{
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #F2EFFF;
+    margin-right: 5px;
+}
+.job-view-text, .job-applied-text {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    margin-right: 25px;
+}
+.job-applied-div {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #5932EA;
+    margin-right: 5px;
+}
+.month-text {
+    font-family: 'Product Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #1A2B88;
+}
+.month {
+    border: none;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    height: 37px;
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="circlesoft.css">
+</head>
+<body>
+    <header class="d-flex align-items-center">
+        <div class="navbar px-5  w-100 navig" style="justify-content: flex-start!important;">
+            <a href="circlesoft.html" class="navbar-brand" ><img src="Group 263.png" alt="logo"></a>
+            <div class="d-flex justify-content-space-between  align-items-center" style="width: calc(100% - 51px - 163px);">
+                <div class="headbox1 d-flex align-items-center">
+                    <button class="search" type="button" data-bs-toggle="modal" data-bs-target="#modali">
+                        <img src="search.png" alt="search icon">
+                        <span class="search-span">Search...</span>
+                    </button>
+
+                    <div class="modal" id="modali">
+
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex justify-content-center">
+                                    search
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form p-4">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="search" style="width: 350px; height: 50px; border-radius: 12px; border: 1px grey solid; padding-left: 16px;" >
+                                            <button type="submit" class="search-button-modal"><img src="search.png"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="headbox15 d-flex align-items-center">
+                    <button class="search" type="button">
+                        <img src="search.png" alt="search icon">
+                    </button>
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="search..." style=" border: none;  width: 300px; height: 40px; padding-left: 20px; border-radius: 25px; " >
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="headbox2 dropdown">
+                    <button class="notifications" data-bs-toggle="dropdown">
+                        <img src="bell2.svg">
+                        <span class="position-absolute translate-middle p-1 bg-danger border-light rounded-circle" style=" top: 10px; left: 30px;"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" id="menu">
+                        <li>
+                            <a class="dropdown-item" href="#">from: system.</a>
+                          
+                        </li>
+                        <li>  <a class="dropdown-item" href="#">from: Sarah.</a>
+                          </li>
+                        <li>
+                            <a class="dropdown-item" href="#">from: Jake.</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" style="opacity: 0.7; text-decoration: underline;" href="#"> see more...</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    
+    <div class="w-100 d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-primary btn-lg w-75 menu-phone" data-bs-toggle="offcanvas" data-bs-target="#offcanvasi">Menu</button>
+
+    </div>
+    <div class="offcanvas offcanvas-start w-100" id="offcanvasi">
+        <div class="user-div d-flex align-items-center ">
+            <img src="user profile.png" alt="user pfp">
+            <div class="w-100 d-flex justify-content-between">
+                <div class="text-div">
+                    <a href="#" class="username">Gavano</a>
+                    <a href="#" class="job">HR manager</a>
+                </div>
+                <div>
+                    <button class="settings"><img src="see more.png"></button>
+                    <button class="btn btn-secondary" style="border: none;" data-bs-dismiss="offcanvas">X</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#" class="active d-flex align-items-center">
+                <div class="purple-div"></div>
+                <img class="active-menu-icon" src="dashboard-icon.png" alt="dashboard icon">
+                <span class="active-menu-span">dashboard</span>
+            </a>
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="finance icon.svg" alt="finance icon">
+                <span class="menu-span">Finance</span>
+            </a>
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="employess icon.png" alt="employees icon">
+                <span class="menu-span">employees</span>
+            </a>
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="company icon.svg" alt="company icon">
+                <span class="menu-span">Company</span>
+            </a>
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="candidate icon.svg" alt="candidate icon">
+                <span class="menu-span">Candidate</span>
+            </a>
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="calendar icon.png" alt="calendar icon">
+                <span class="menu-span">Calendar</span>
+            </a>
+        
+            <hr class="line">
+
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="profile icon.png" alt="profile icon">
+                <span class="menu-span">Profile</span>
+            </a>
+            <a href="#" class="enabled d-flex align-items-center">
+                <img class="menu-icon" src="setting icon.png" alt="setting icon">
+                <span class="menu-span">setting</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container-fluid w-100 p-0 d-flex" style=" height: auto;">
+        <div class="vertical-menu-dskt" style="height: auto;">
+            <div class="user-div d-flex align-items-center">
+                <img src="user profile.png" alt="user pfp">
+                <div class="w-100 d-flex justify-content-between">
+                    <div class="text-div">
+                        <a href="#" class="username">Gavano</a>
+                        <a href="#" class="job">HR manager</a>
+                    </div>
+                    <button class="settings"><img src="see more.png"></button>    
+                </div>
+            </div>
+            <div class="menu">
+                <a href="#" class="active d-flex align-items-center">
+                    <div class="purple-div"></div>
+                    <img class="active-menu-icon" src="dashboard-icon.png" alt="dashboard icon">
+                    <span class="active-menu-span">dashboard</span>
+                </a>
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="finance icon.svg" alt="finance icon">
+                    <span class="menu-span">Finance</span>
+                </a>
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="employess icon.png" alt="employees icon">
+                    <span class="menu-span">employees</span>
+                </a>
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="company icon.svg" alt="company icon">
+                    <span class="menu-span">Company</span>
+                </a>
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="candidate icon.svg" alt="candidate icon">
+                    <span class="menu-span">Candidate</span>
+                </a>
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="calendar icon.png" alt="calendar icon">
+                    <span class="menu-span">Calendar</span>
+                </a>
+                
+                <hr class="line">
+    
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="profile icon.png" alt="profile icon">
+                    <span class="menu-span">Profile</span>
+                </a>
+                <a href="#" class="enabled d-flex align-items-center">
+                    <img class="menu-icon" src="setting icon.png" alt="setting icon">
+                    <span class="menu-span">setting</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="w-100">
+            <div class="row pt-4 p-3 gx-4 gy-4 w-100">
+                <div class="col-lg-3 col-md-6" style="height: 139px;">
+                    <div class="h-100" style="padding-top: 23px; padding-left: 32px; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);">
+                        <div class="d-flex">
+                            <span class="dash4-title-span">Total Employees</span>
+                            <div class="positive">
+                                <img src="positive arrow.png">
+                                <span class="positive-percent">10.0%</span>
+                            </div>
+                        </div>
+                        <span class="number">856</span><br>
+                        <span class="footer-span">Employee</span> 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" style="height: 139px;">
+                    <div class="h-100" style="padding-top: 23px; padding-left: 32px; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);">
+                        <div class="d-flex">
+                            <span class="dash4-title-span">Job view</span>
+                            <div class="positive">
+                                <img src="positive arrow.png">
+                                <span class="positive-percent">22.0%</span>
+                            </div>
+                        </div>
+                        <span class="number">3,342</span><br>
+                        <span class="footer-span">viewers</span> 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" style="height: 139px;">
+                    <div class="h-100" style="padding-top: 23px; padding-left: 32px; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);">
+                        <div class="d-flex">
+                            <span class="dash4-title-span">Job applied</span>
+                            <div class="positive">
+                                <img src="positive arrow.png">
+                                <span class="positive-percent">12.0%</span>
+                            </div>
+                        </div>
+                        <span class="number">77</span><br>
+                        <span class="footer-span">applicants</span> 
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" style="height: 139px;">
+                    <div class="h-100" style="padding-top: 23px; padding-left: 28px; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);">
+                        <div class="d-flex">
+                            <span class="dash4-title-span">Resigned employees</span>
+                            <div class="negative">
+                                <img src="negative arrow.png">
+                                <span class="negative-percent">10.0%</span>
+                            </div>
+                        </div>
+                        <span class="number">856</span><br>
+                        <span class="footer-span">Employee</span> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="row px-2  gy-4">
+                <div class="col-12">
+                    <div class="row px-3 gx-4 gy-4">
+                        <div class="col-12" >
+                            <div class="card" style="padding-top: 15px; padding-left: 30px; padding-right: 30px; height: auto; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);"">
+                                <div class="card-body">
+                                    <div class="justify-content-between d-flex">
+                                        <span class="job-statistics-title">Job Statistics</span>
+                                        <div class="d-flex">
+                                            <div class="mt-2 d-flex">
+                                                <div class="job-view-div"></div>
+                                                <span class="job-view-text">Job view</span>
+                                                <div class="job-applied-div"></div>
+                                                <span class="job-applied-text">Job applied</span>
+                                            </div>
+                                            
+                                            <div class="dropdown">
+                                                <button class="month" data-bs-toggle="dropdown">
+                                                    <span class="month-text">this month</span>
+                                                    <img src="akar-icons_chevron-down.png">
+                                                </button>
+                            
+                                                <ul class="dropdown-menu" id="menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">june</a>
+                                                      
+                                                    </li>
+                                                    <li>  <a class="dropdown-item" href="#">may</a>
+                                                      </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">april</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" style="opacity: 0.7; text-decoration: underline;" href="#">more months..</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <img class="img-fluid" src="Screenshot (104).png" alt="" style="width: 98%;">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-4 p-3 gy-4 gx-4 w-100">
+                <div class="col-lg-8 col-md-12 that-one-table-shit2" >
+                    <div class="that-one-table-shit"> 
+                        <div class="d-flex justify-content-between">
+                            <span class="table-div-title">Employee Status</span>
+                            <button class="filter-button">Filter & Short <img src="setting filter.png" alt=""></button>
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="font-family: 'Product Sans'; font-size: 14px; font-weight: 400; line-height: 18px; letter-spacing: 0.01em; color: rgba(148, 148, 148, 1);">Employee Name</th>
+                                    <th style="font-family: 'Product Sans'; font-size: 14px; font-weight: 400; line-height: 18px; letter-spacing: 0.01em; color: rgba(148, 148, 148, 1);">Department</th>
+                                    <th style="font-family: 'Product Sans'; font-size: 14px; font-weight: 400; line-height: 18px; letter-spacing: 0.01em; color: rgba(148, 148, 148, 1);">Age</th>
+                                    <th style="font-family: 'Product Sans'; font-size: 14px; font-weight: 400; line-height: 18px; letter-spacing: 0.01em; color: rgba(148, 148, 148, 1);">Disipline</th>
+                                    <th style="font-family: 'Product Sans'; font-size: 14px; font-weight: 400; line-height: 18px; letter-spacing: 0.01em; color: rgba(148, 148, 148, 1);">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        <img src="user-table1.png" alt=""> <span>Justin Lipshutz</span>
+                                    </th>
+                                    <th>
+                                        Marketing
+                                    </th>
+                                    <th>
+                                        22
+                                    </th>
+                                    <th>
+                                        <span class="plus">+</span>
+                                        <span class="table-disipline-percent">100%</span>
+                                    </th>
+                                    <th>
+                                        <span class="permanent">permanent</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="user-table2.png" alt=""> <span>Marcus Culhane</span>
+                                    </th>
+                                    <th>
+                                        Finance
+                                    </th>
+                                    <th>
+                                        24
+                                    </th>
+                                    <th>
+                                        <span class="plus">+</span>
+                                        <span class="table-disipline-percent">95%</span>
+                                    </th>
+                                    <th>
+                                        <span class="Contact">Contact</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img src="user-table3.png" alt=""> <span>Leo Standton</span>
+                                    </th>
+                                    <th>
+                                        R&D
+                                    </th>
+                                    <th>
+                                        28
+                                    </th>
+                                    <th>
+                                        <span class="plus">+</span>
+                                        <span class="table-disipline-percent">89%</span>
+                                    </th>
+                                    <th>
+                                        <span class="permanent">permanent</span>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12" >
+                    <div class="card" style=" padding-top: 15px; padding-left: 30px; padding-right: 30px; height: auto; background-color: white; border-radius: 6px; border: 2px solid rgba(236, 238, 246, 1);"">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <span class="job-statistics-title">Empoloyee Composition</span>
+                            </div>
+                            <img src="Screenshot (115).png" alt="" class="w-100" >
+                            <div class="d-flex justify-content-center">
+                                <span style="font-size: 16px; color: #949494; display: block; margin-top: 16px;">856 employees total</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
